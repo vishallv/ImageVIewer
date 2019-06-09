@@ -22,10 +22,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSd-5L-Pud">
+                                <rect key="frame" x="67" y="20" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiG-0b-1Ep">
+                                        <rect key="frame" x="99" y="53.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kiG-0b-1Ep" firstAttribute="centerY" secondItem="HSd-5L-Pud" secondAttribute="centerY" id="EXG-Vo-Snv"/>
+                                    <constraint firstAttribute="width" constant="240" id="Qoi-cP-5cA"/>
+                                    <constraint firstItem="kiG-0b-1Ep" firstAttribute="centerX" secondItem="HSd-5L-Pud" secondAttribute="centerX" id="TGZ-fr-EE3"/>
+                                    <constraint firstAttribute="height" constant="128" id="cbD-eE-VlL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSd-5L-Pud" secondAttribute="trailing" constant="68" id="1H4-jB-oZn"/>
+                            <constraint firstItem="HSd-5L-Pud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wi0-Jc-mRb"/>
+                            <constraint firstItem="HSd-5L-Pud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="nxC-gA-tIq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="kiG-0b-1Ep" id="NWD-NR-Zmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
